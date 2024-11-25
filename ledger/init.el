@@ -1,22 +1,6 @@
-(defun ledger-db ()
-  (interactive)
-  (let ((sql-database "ledger")
-        (sql-server "kodos.zrail.net")
-        (sql-user "ledger"))
-    (sql-postgres)))
-
-(defun okapi-db ()
-  (interactive)
-  (let ((sql-database "okapi")
-        (sql-server "kodos.zrail.net")
-        (sql-user "okapi"))
-    (sql-postgres)))
-
-(require-el-get
- '(:name ledger-new2
-         :type git
-         :options ("xzf")
-         :url "https://github.com/ledger/ledger-mode.git"))
+(use-package ledger-mode
+  :ensure t
+  :pin MELPA)
 
 (post-init (lambda ()
     (require 'ledger-mode)

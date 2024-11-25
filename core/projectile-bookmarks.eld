@@ -1,0 +1,1 @@
+("~/guideline/app/" "~/dotfiles/guideline/" "~/dotfiles/")

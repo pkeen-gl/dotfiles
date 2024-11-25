@@ -42,7 +42,7 @@
                  (modes  . '(ruby-mode))))
 
   (add-hook 'ruby-mode-hook '(lambda ()
-                               (flycheck-mode)
+                               (flymake-mode)
                                (setq ruby-deep-arglist t)
                                (setq ruby-deep-indent-paren nil)
                                (setq c-tab-always-indent nil)
@@ -63,7 +63,7 @@
 
 
   (setenv "PATH" (concat (getenv "HOME") "/.rbenv/shims:" (getenv "HOME") "/.rbenv/bin:" (getenv "PATH")))
-  (setq exec-path (cons (concat (getenv "HOME") "/.rbenv/shims") (cons (concat (getenv "HOME") "/.rbenv/bin") exec-path)))
+  (setq exec-path (getenv "PATH"))
 
 (require 'align)
 

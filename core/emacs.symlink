@@ -7,7 +7,10 @@
 ;; You may delete these explanatory comments.
 (add-to-list 'package-archives
              '("MELPA Stable" . "https://stable.melpa.org/packages/") t)
+(add-to-list 'package-archives
+             '("MELPA" . "https://melpa.org/packages/") t)
 (package-initialize)
+(setq package-check-signature nil)
 
 (defvar post-init-hook '()
   "Run after init")

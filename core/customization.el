@@ -26,6 +26,8 @@
  '(cua-enable-cursor-indications t)
  '(cua-normal-cursor-color '(box . "red"))
  '(current-language-environment "UTF-8")
+ '(custom-safe-themes
+   '("fee7287586b17efbfda432f05539b58e86e059e78006ce9237b8732fde991b4c" "4c56af497ddf0e30f65a7232a8ee21b3d62a8c332c6b268c81e9ea99b11da0d3" default))
  '(default-input-method "latin-1-prefix")
  '(display-time-mode t)
  '(flycheck-rubocop-lint-only t)
@@ -41,7 +43,8 @@
  '(ns-alternate-modifier nil)
  '(ns-command-modifier 'meta t)
  '(org-log-done 'time)
- '(package-selected-packages '(queue))
+ '(package-selected-packages
+   '(markdown-mode quelpa-use-package quelpa editorconfig ledger-mode projectile-rails flx-ido projectile rg web-mode multi-term yaml-mode textmate rhtml-mode inf-ruby solarized-theme color-theme-solarized flycheck fly-check ace-window undo-tree use-package queue))
  '(printer-name "violet")
  '(ps-lpr-command "myprint.sh")
  '(ps-lpr-switches '(""))

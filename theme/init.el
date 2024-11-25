@@ -1,4 +1,4 @@
-(use package solarized-theme))
+(use-package solarized-theme)
 
 (defun night ()
   (interactive)
