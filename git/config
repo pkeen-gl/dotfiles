@@ -1,6 +1,7 @@
 [user]
 	name = Pete Keen
-	email = pete@petekeen.net
+	email = pete.keen@gusto.com
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEOvbgbP7H/GRpDCrwC2DEcyp0IBWqdotxJYWSc/jt4h  
 
 [alias]
     alias = "!sh -c '[ $# = 2 ] && git config --global alias.\"$1\" \"$2\" && exit 0 || echo \"usage: git alias <new alias> <original command>\" >&2 && exit 1' -"
@@ -33,6 +34,8 @@
     preloadindex = true
 	excludesFile = ~/.gitignore
 	quotepath = false
+  untrackedCache = true
+  fsmonitor = true
 [gc]
     pruneExpire = 6 months ago
     aggressiveWindow = 20
@@ -57,5 +60,21 @@
 	default = matching
 [commit]
 	verbose = true
+	gpgsign = true
 [fetch]
 	prune = true
+# [credential "https://github.com"]
+# 	helper = !op plugin run -- gh auth git-credential
+# [credential "https://gist.github.com"]
+# 	helper = !op plugin run -- gh auth git-credential
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign  
+
+[maintenance]
+	repo = /Users/pete.keen/workspace/zenpayroll
+	repo = /Users/pete.keen/workspace/web
+  repo = /Users/pete.keen/guideline/app
+[init]
+	defaultBranch = main

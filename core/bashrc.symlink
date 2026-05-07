@@ -24,4 +24,10 @@ done
 export TERM=xterm-256color
 
 umask 0002
-mesg n
+source /Users/pete.keen/dotfiles/op/plugins.sh
+source ~/.glrc
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/pete.keen/.lmstudio/bin"
+# End of LM Studio CLI section
+

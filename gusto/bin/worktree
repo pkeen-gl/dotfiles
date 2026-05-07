@@ -1,0 +1,22 @@
+#!/bin/bash
+
+script_path="${HOME}/workspace/minions/scripts/worktree"
+cmd="$1"
+
+shift
+
+if [[ $cmd == "" ]]; then
+    cd $script_path
+    echo "Available commands:"
+    find . -type f -perm +111 -exec basename {} \;
+    exit 1
+fi
+
+cmd_path="${HOME}/workspace/minions/scripts/worktree/$cmd"
+
+if [[ -s $cmd_path ]]; then
+    exec $cmd_path $@
+else
+    echo "Error: no script found at $cmd_path"
+    exit 1
+fi

@@ -1,0 +1,58 @@
+{
+  "permissions": {
+    "allow": [
+      "Shell(ls)",
+      "Shell(cd)",
+      "Shell(bundle)",
+      "Shell(git diff)",
+      "Shell(git log)",
+      "Shell(git show)",
+      "Shell(head)",
+      "WebFetch(gustohq.atlassian.net)"
+    ],
+    "deny": []
+  },
+  "version": 1,
+  "editor": {
+    "vimMode": false
+  },
+  "model": {
+    "modelId": "claude-4.6-opus-high-thinking",
+    "displayModelId": "opus-4.6-thinking",
+    "displayName": "Claude 4.6 Opus (Thinking)",
+    "displayNameShort": "Opus 4.6 (Thinking)",
+    "aliases": [
+      "opus-4.6-thinking",
+      "claude-4.6-opus-thinking"
+    ],
+    "maxMode": false
+  },
+  "hasChangedDefaultModel": false,
+  "maxMode": false,
+  "privacyCache": {
+    "ghostMode": true,
+    "privacyMode": 2,
+    "updatedAt": 1771358295887
+  },
+  "authInfo": {
+    "email": "pete.keen@gusto.com",
+    "displayName": "Pete Keen",
+    "teamId": 1059033,
+    "teamName": "Gusto",
+    "userId": 316875615,
+    "authId": "auth0|user_01KEW4RC7R92RE5QFMFK38XN2Q"
+  },
+  "network": {
+    "useHttp1ForAgent": false
+  },
+  "approvalMode": "allowlist",
+  "sandbox": {
+    "mode": "disabled",
+    "networkAccess": "user_config_with_defaults"
+  },
+  "attribution": {
+    "attributeCommitsToAgent": true,
+    "attributePRsToAgent": true
+  },
+  "webFetchDomainAllowlist": []
+}

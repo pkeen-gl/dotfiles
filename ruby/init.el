@@ -61,9 +61,12 @@
                               (setq css-indent-level 2)
                               (setq css-indent-offset 2)))
 
+  (remove-hook 'ruby-mode-hook #'rubocop-mode)
 
-  (setenv "PATH" (concat (getenv "HOME") "/.rbenv/shims:" (getenv "HOME") "/.rbenv/bin:" (getenv "PATH")))
-  (setq exec-path (cons (concat (getenv "HOME") "/.rbenv/shims") (cons (concat (getenv "HOME") "/.rbenv/bin") exec-path)))
+  ;(flycheck-disable-checker 'ruby-rubocop)
+
+  ;(setenv "PATH" (concat (getenv "HOME") "/.rbenv/shims:" (getenv "HOME") "/.rbenv/bin:" (getenv "PATH")))
+  ;(setq exec-path (cons (concat (getenv "HOME") "/.rbenv/shims") (cons (concat (getenv "HOME") "/.rbenv/bin") exec-path)))
 
 (require 'align)
 

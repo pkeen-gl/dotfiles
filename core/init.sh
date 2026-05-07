@@ -1,5 +1,5 @@
 unset PROMPT_COMMAND
-export PATH=/Applications/Emacs.app/Contents/MacOS/bin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=/Applications/Emacs.app/Contents/MacOS/bin:$PATH
 export EDITOR='emacsclient'
 export LC_CTYPE="UTF-8"
 export LC_ALL="en_US.UTF-8"

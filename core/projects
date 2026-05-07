@@ -1,0 +1,4 @@
+;;; -*- lisp-data -*-
+(("/Users/pete.keen/.emacs.d/elpa/monet/")
+ ("/Users/pete.keen/.emacs.d/elpa/claude-code/")
+ ("/Users/pete.keen/.emacs.d/elpa/inheritenv/"))
